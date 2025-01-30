@@ -1,15 +1,143 @@
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #f1f1f1;
 }
 
 header h1 {
+    font-size: 48px;
+    margin: 0;
     letter-spacing: 1px;
 }
 
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Two-column Layout */
+.two-column {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Left Column */
+.left-column {
+    width: 48%;
+}
+
+/* Box Layout for Sections */
 section {
-    transition: transform 0.3s ease-in-out;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
     transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Titles */
+.section-title {
+    background: #212f3c;
+    color: white;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+li:before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #2ecc71;
+}
+
+/* Button Styling */
+.download-btn {
+    background-color: #003aff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #ff4040;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .two-column {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        width: 100%;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Animation for Header */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+header {
+    animation: fadeIn 1s ease-in;
 }
