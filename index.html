@@ -3,100 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuntawat Fangritlong - Resume</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Cloud Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+<body>
 
-    <!-- Hero Section -->
-    <header class="bg-green-600 text-white py-12">
-        <div class="container mx-auto flex flex-col md:flex-row items-center">
-            <img src="images/profile.jpg" alt="Profile" class="w-32 h-32 rounded-full shadow-lg mb-4 md:mr-6">
-            <div>
-                <h1 class="text-4xl font-bold mb-2">Nuntawat Fangritlong</h1>
-                <p class="text-xl">System Cloud Engineer | AWS & Azure </p>
-                <div class="mt-4">
+<header>
+    <h1>Nuntawat Fangritlong</h1>
+    <p>Cloud Engineer</p>
+</header>
 
-                    <p class="text-lg leading-relaxed">
-                        Hello, I’m Nuntawat Fangritlong, a Cloud Infrastructure & Automation Engineer with expertise in AWS and Azure cloud ecosystems. 
-                        I specialize in deploying and managing cloud services, automating infrastructure with Terraform and Ansible, 
-                        and optimizing systems through Python scripting and Grafana monitoring. I’m passionate about building scalable, secure, 
-                        and efficient cloud environments that drive operational excellence.
-                    </p>
-                    <br>
-                    <a href="mailto:nuntawat.works@gmail.com" class="mr-4 hover:underline">📧 nuntawat.works@gmail.com</a>
-                    <a href="tel:080-9746514" class="hover:underline">📞 080-9746514</a>
-                </div>
-                
-            </div>
-        </div>
-    </header>
+<div class="container">
+    <div class="content">
+        <!-- About Me Section -->
+        <section>
+            <h2 class="section-title">About Me</h2>
+            <p>As a skilled Cloud and Network Engineer, I specialize in AWS, Azure, and automation using Terraform, Ansible, and more. My passion is building efficient, scalable solutions while automating manual tasks to increase productivity.</p>
+        </section>
 
-    <!-- Skills Section -->
-    <section class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
-        <h2 class="text-2xl font-bold mb-4 text-green-600">Technical Skills</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="flex items-center">
-                <i class="fas fa-cloud text-green-500 text-2xl mr-2"></i>
-                <p>AWS/Azure: EC2, S3, VPC, RDS, Lambda, Automation Account </p>
-            </div>
-            <div class="flex items-center">
-                <i class="fas fa-server text-green-500 text-2xl mr-2"></i>
-                <p>Monitoring: Grafana, Prometheus, Docker</p>
-            </div>
-            <div class="flex items-center">
-                <i class="fas fa-network-wired text-green-500 text-2xl mr-2"></i>
-                <p>Networking: Cisco, Switch, Firewall</p>
-            </div>
-            <div class="flex items-center">
-                <i class="fas fa-tools text-green-500 text-2xl mr-2"></i>
-                <p>Automation: Terraform, Ansible</p>
-            </div>
-            <div class="flex items-center">
-                <i class="fas fa-database text-green-500 text-2xl mr-2"></i>
-                <p>Database: RDS, CloudSQL</p>
-            </div>
-            <div class="flex items-center">
-                <i class="fas fa-database text-green-500 text-2xl mr-2"></i>
-                <p>Script: Yaml, bash, Python</p>
-            </div>
-        </div>
-    </section>
+        <!-- Skills Overview -->
+        <section class="skills">
+            <h3 class="section-title">Core Skills</h3>
+            <ul>
+                <li><strong>DevOps:</strong> CI/CD (GitHub Actions, GitLab CI/CD), (Docker, ECS)</li>
+                <li><strong>Networking:</strong> Cisco (DNA, ISE, WLC), VLAN, Trunk, HAProxy, Squid Proxy</li>
+                <li><strong>Automation:</strong> Ansible, Terraform, Jenkins, Linux Scripting</li>
+                <li><strong>Monitoring:</strong> CloudWatch, Grafana, Prometheus, Loki</li>
+                <li><strong>Virtualization:</strong> VMware ESXi, vCenter</li>
+            </ul>
+        </section>
 
-    <!-- Work Experience Section -->
-    <section class="container mx-auto my-8 p-6 bg-white shadow-lg rounded-lg">
-        <h2 class="text-2xl font-bold mb-4 text-green-600">Work Experience</h2>
-        <div class="relative border-l-4 border-green-500 pl-6">
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold">Cloud Engineer</h3>
-                <p class="text-gray-600">Fujitsu Thailand Co., Ltd. | <span class="text-sm">2024 - Present</span></p>
-                <p>- Managed cloud migration projects and optimized AWS resources.</p>
-            </div>
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold">System & Network Engineer</h3>
-                <p class="text-gray-600">Tri Petch IT Solutions | <span class="text-sm">2022 - 2023</span></p>
-                <p>- Handled network infrastructure and security improvements.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-semibold">System & Network Engineer</h3>
-                <p class="text-gray-600">Pro Inside Co., Ltd. | <span class="text-sm">2021 - 2022</span></p>
-                <p>- Developed automation scripts for patch management.</p>
-            </div>
-        </div>
-    </section>
+        <!-- Professional Highlights -->
+        <section class="highlights">
+            <h3 class="section-title">Professional Highlights</h3>
+            <ul>
+                <li>Implemented hybrid cloud solutions using Azure Arc & Site Recovery.</li>
+                <li>Led automation of infrastructure with Terraform & Ansible for multiple clients.</li>
+                <li>Integrated monitoring solutions using Grafana & Prometheus for real-time visibility.</li>
+            </ul>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="container mx-auto text-center my-8">
-        <a href="Nuntawat-CE.pdf" download class="bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700 transition">
-            Download Resume <i class="fas fa-download ml-2"></i>
-        </a>
-    </section>
+        <!-- CTA Section -->
+        <section class="cta">
+            <p>If you’d like to see more of my achievements, download my full resume below.</p>
+            <a href="Nuntawat-CE.pdf" class="download-btn" download>Download My Resume</a>
+        </section>
+    </div>
+</div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-4">
-        <p>&copy; 2024 Nuntawat Fangritlong | All Rights Reserved</p>
-    </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
